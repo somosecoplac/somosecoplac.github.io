@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="data/favicon.png" type="image/x-icon">
+    <title>Ecoplac</title>
+</head>
+
+<body>
+    <!-- HEADER SECTION -->
+    <section id="header">
+        <div class="header-container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <h1>EcoPlac</h1>
+                </div>
+                <div class="nav-list">
+                    <div class="burger">
+                        <div class="bar"></div>
+                    </div>
+                    <ul id="menu">
+                        <li><a href="#slide" data-after="Inicio">Inicio</a></li>
+                        <li><a href="#nuestra_empresa" data-after="Nuestra empresa">Nuestra empresa</a></li>
+                        <li><a href="#adquirir_producto" data-after="Producto">Producto</a></li>
+                        <li><a href="#footer" data-after="Contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END HEADER SECTION -->
+
+    <!-- SLIDE SECTION-->
+    <section id="slide">
+        <dive class="slide container">
+            <div>
+                <h1>Construí usando placas de calidad <span></span></h1>
+                <h1>e innovación sustentable<span></span></h1>
+                <a href="#nuestra_empresa_title" type="button" class="btn-slide">Explorar</a>
+            </div>
+        </dive>
+    </section>
+    <!-- END SLIDE SECTION-->
+
+    <!-- NUESTRA EMPRESA SECTION-->
+    <section id="nuestra_empresa">
+        <div class="nuestra_empresa_banner_icons">
+            <div class="icon-bar">
+                <i class="fas fa-3x fa-map-marker-alt"></i>
+                <br>
+                <span>Nuestra marca se vende <br> en más de 40 ubicaciones</span>
+            </div>
+            <div class="icon-bar">
+                <i class="fas fa-3x fa-leaf"></i>
+                <br>
+                <span>Utilizamos materiales reciclados para <br> realizar nuestras placas</span>
+            </div>
+            <div class="icon-bar">
+                <i class="fas fa-3x fa-search"></i>
+                <br>
+                <span>Mantenemos programas de investigación para innovar productos</span>
+            </div>
+        </div>
+
+        <h2 id="nuestra_empresa_title">Nuestra empresa</h2>
+        <p>Somos una empresa fundada en 2021 por jóvenes profesionales motivados por el desarrollo de la industria
+            nacional, la sustentabilidad y el cuidado del medio ambiente. Fabricamos tableros de partículas aglomeradas
+            con base orgánica utilizando como materia prima cáscaras de arroz y maní provenientes de los desechos de
+            cosechas de grandes productoras argentinas. De este modo colaboramos en la reducción de residuos y creamos
+            un producto que, además de tener mejores cualidades físicas que los tradicionales, también es ecológico.</p>
+        <div class="nuestra_empresa_info">
+            <div class="nuestra_empresa_info_col">
+                <div class="info_row" id="vision">
+                    <h3>Visión</h3>
+                    <p>Convertirnos en la productora de este tipo de tableros preferida de los clientes, manteniendo una
+                        iniciativa sustentable en cada acción. A tal fin, debemos alcanzar constantemente resultados
+                        financieros y operativos superiores, al mismo tiempo que nos adherimos a altos estándares
+                        éticos.</p>
+                </div>
+                <div class="info_row" id="mision">
+                    <h3>Misión</h3>
+                    <p>Dedicación para el éxito de cada cliente. Innovación en cuanto a la materia prima. Confianza y
+                        responsabilidad personal en todas nuestras relaciones. Asegurar el cuidado del medio ambiente.
+                    </p>
+                </div>
+                <div class="info_row" id="politicas">
+                    <h3>Políticas</h3>
+                    <p>- Ofrecer productos de calidad y mantener programas de investigación permanentes para reformular
+                        e innovar productos.</p>
+                    <p>- Optimizar el uso de empaques y materias primas, considerando los requerimientos de nuestros
+                        productos.</p>
+                    <p>- Fomentar el uso de fuentes renovables en nuestros procesos.</p>
+                    <p>- Garantizar la integridad, la dignidad e individualidad de los colaboradores dentro de un sano
+                        clima de trabajo caracterizado por el respeto, justicia, confianza y afecto entre sus
+                        integrantes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END NUESTRA EMPRESA SECTION-->
+
+
+
+    <!-- ADQUIRIR PRODUCTO SECTION-->
+    <section id="adquirir_producto">
+        <h2 class="titulo_seccion">Adquirir producto</h2>
+        <div class="producto_form_cont">
+            <div class="form_img">
+                <img src="imgs/3.jpg" alt="ss" style="width: 80%;">
+                <h5>Descripción</h5>
+                <p>Los tableros de partículas aglomeradas ofrecen varias posibilidades: desde la construcción de
+                    muebles, suelos o falsos techos, hasta su uso como aislante térmico o acústico</p>
+            </div>
+            <div class="form_body">
+                <h4>Aglomerado</h4>
+                <br>
+                <form action="#" class="form_grid">
+                    <div class="form_row">
+                        <label>Alto</label>
+                        <br>
+                        <input type="text" placeholder="1.22m" disabled="true" name="alto">
+                    </div>
+                    <div class="form_row">
+                        <label for="ancho">Ancho</label>
+                        <br>
+                        <input type="text" placeholder="2.44m" disabled="true" name="ancho">
+                    </div>
+                    <div class="form_row">
+                        <label for="espesor">Espesor</label>
+                        <br>
+                        <select name="espesor" id="espesorSelector" onchange="calcularPrecioFinal()">
+                            <option value="10mm">10mm</option>
+                            <option value="12mm">12mm</option>
+                            <option value="15mm">15mm</option>
+                            <option value="18mm">18mm</option>
+                            <option value="22mm">22mm</option>
+                        </select>
+                    </div>
+                    <div class="form_row">
+                        <label for="Unidades">Unidades</label>
+                        <br>
+                        <input type="number" name="Unidades" id="cantUnidades" value="1" min="1"
+                            onchange="calcularPrecioFinal()">
+                    </div>
+
+                    <div class="form_row">
+
+                        <input type="button" id="btn-compra" value="Añadir al carrito">
+                        <!-- <span>Para compras mayoristas comunicarse a través de nuestros medios de contacto para coordinar la venta.</span> -->
+                    </div>
+                    <div class="form_row">
+                        <label for="precioTotal"><strong>TOTAL</strong></label>
+                        <br>
+                        <input type="text" name="precioTotal" disabled="true" id="precioFinal">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- END ADQUIRIR PRODUCTO SECTION-->
+
+
+    <!-- CARRITO DE COMRPAS SECTION-->
+    <section id="carritoDeCompras">
+        <div class="carrito">
+
+
+            <h2 class="titulo_seccion">Carrito de compras</h2>
+            <div id="tabla">
+
+            </div>
+            <br>
+            <p id="montoFinal"></p>
+            <br>
+            <p id="costoEnvio"></p>
+            <br>
+            <div class="form_row">
+                <label for="codP">Código postal</label>
+                <br>
+                <input type="number" name="codP" id="inputCodP" onchange="calcularPrecioXEnvio()">
+            </div>
+            <div class="form_row">
+                <input type="button" value="Calcular envío" onchange="calcularPrecioXEnvio()">
+            </div>
+            <div class="form_row">
+                <input type="button" value="Confirmar compra" id="confirmarCompra" onclick="confirmacionDeCompra()">
+            </div>
+        </div>
+    </section>
+    <!-- END CARRITO DE COMRPAS SECTION-->
+
+    <!-- FOOTER SECTION -->
+    <section id="footer">
+        <div class="footerA">
+            <h1>EcoPlac</h1>
+            <h2>Contacto</h2>
+            <p>+54 9 11 1284-0978</p>
+            <p>Parque Industrial San Francisco, Córdoba Argentina</p>
+            <p><a href="https://www.google.com.ar">Cómo llego</a></p>
+            <p><a>EcoPlac@gmail.com/EcoPlac</a></p>
+            <br>
+            <p>© 2009 - 2021 ECO PLAC. Derechos reservados</p>
+        </div>
+        <div class="footerB">
+            <div>
+                <p><a href="#nuestra_empresa">Nuestra empresa</a></p>
+                <p><a href="#vision">Visión</a></p>
+                <p><a href="#mision">Misión</a></p>
+                <p><a href="#politicas">Políticas</a></p>
+                <br>
+                <h2>Encontranos en</h2>
+                <a href="#"><span class="fab fa-instagram"></span></a>
+                <a href="#"><span class="fab fa-facebook-square"></span></a>
+            </div>
+            <div>
+                <p><a href="#adquirir_producto">Nuestro producto</a></p>
+            </div>
+            <div>
+                <p><a href="#footer">Contacto</a></p>
+            </div>
+        </div>
+    </section>
+    <!-- END FOOTER SECTION -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
